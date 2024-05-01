@@ -17,10 +17,7 @@
 .filter-search {
     &__form {
         display: flex;
-
     }
-
-
 
     &__input {
         border: none;
@@ -63,7 +60,6 @@
         cursor: pointer;
     }
 
-
     &__btn {
         min-width: 100px;
         letter-spacing: 3px;
@@ -87,7 +83,7 @@
         width: 30px;
         height: 30px;
         background-color: #fff;
-        box-shadow: 0px 0px 13px 0px rgba(90, 90, 90, 0.2);
+        box-shadow: 0 0 13px 0 rgba(90, 90, 90, 0.2);
     }
 
     .irs--flat .irs-handle>i:first-child {
@@ -146,7 +142,7 @@
         }
 
         &:focus+.filter-color__checkbox {
-            box-shadow: 0px 0px 20px 0px rgba(90, 90, 90, 1.0);
+            box-shadow: 0 0 20px 0 rgba(90, 90, 90, 1.0);
         }
 
     }
@@ -210,7 +206,7 @@
         }
 
         &:focus+.filter-size__checkbox {
-            box-shadow: 0px 0px 9px 0px rgba(90, 90, 90, 1.0);
+            box-shadow: 0 0 9px 0 rgba(90, 90, 90, 1.0);
         }
 
     }
@@ -248,7 +244,7 @@
         }
 
         &:focus+.filter-category__checkbox {
-            box-shadow: 0px 0px 20px 0px rgba(90, 90, 90, 1.0);
+            box-shadow: 0 0 20px 0 rgba(90, 90, 90, 1.0);
         }
     }
 
@@ -287,7 +283,7 @@
         }
 
         &:focus+.filter-popular__checkbox {
-            box-shadow: 0px 0px 9px 0px rgba(90, 90, 90, 1.0);
+            box-shadow: 0 0 9px 0 rgba(90, 90, 90, 1.0);
         }
     }
 

@@ -23,7 +23,7 @@
             border-radius: 50%;
             cursor: pointer;
             outline: none;
-            box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3);
+            box-shadow: 0 7px 20px 0 rgba(168, 168, 168, 0.3);
 
             path {
                 fill: #fff;
@@ -66,7 +66,7 @@
 
         &.blog-page__item--no-image {
             border-top: 1px solid #ececec;
-            box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35);
+            box-shadow: 0 20px 60px 0 rgba(202, 202, 202, 0.35);
         }
     }
 

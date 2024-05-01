@@ -139,7 +139,7 @@
         &__list {
             transform: translateY(-200%);
             position: fixed;
-            top: 0px;
+            top: 0;
             width: 100%;
             left: 0;
             flex-direction: column;
@@ -175,15 +175,4 @@
         margin: 0 auto;
     }
 
-}
-
-@media (max-width: 768px) {
-
-
-    .user-nav {
-        // width: 100%;
-        // margin-top: 35px;
-        // justify-content: flex-end;
-        // padding-right: 15px;
-    }
 }

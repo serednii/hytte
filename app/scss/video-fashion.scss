@@ -12,16 +12,10 @@
 
     &__popup {
         margin-right: 76px;
-        // max-width: 530px;
-        // width: 100%;
         flex-basis: 530px;
         flex-shrink: 0;
         height: 480px;
         display: flex;
-        // background-image: image-set(
-        //         url("../images/video-fashion.avif") type("image/avif"),
-        //         url("../images/video-fashion.jpg") type("image/jpg"),
-        //         url("../images/video-fashion.webp") type("image/webp"));
         justify-content: center;
         align-items: center;
         background-repeat: no-repeat;

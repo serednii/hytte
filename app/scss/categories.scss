@@ -53,7 +53,7 @@
         background-color: #fff;
         padding: 60px 30px;
         max-width: 370px;
-        box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+        box-shadow: 20px 0 60px 0 rgba(202, 202, 202, 0.35);
 
         &::before {
             position: absolute;
@@ -88,8 +88,6 @@
     }
 
 }
-
-
 
 .categories {
     &__items {
@@ -179,7 +177,7 @@
         color: $title;
         @extend %roboto-400;
         transition: all .3s;
-        padding: 3px 5px 3px 0px;
+        padding: 3px 5px 3px 0;
         cursor: pointer;
         border-bottom: 1px solid transparent;
 
