@@ -75,6 +75,10 @@
     justify-content: center;
     width: 230px;
 
+    &__item {
+        padding: 3px;
+    }
+
     &__link {
         position: relative;
         padding: 3px;
