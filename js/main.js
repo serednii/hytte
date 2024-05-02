@@ -50,11 +50,13 @@ $(document).ready(function () {
 
   function showCalendarIn(e) {
     e.stopPropagation()
+    calendarOut.removeClass('active');
     calendarIn.toggleClass('active')
   }
 
   function showCalendarOut(e) {
     e.stopPropagation();
+    calendarIn.removeClass('active')
     calendarOut.toggleClass('active');
   }
 
