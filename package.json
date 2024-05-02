@@ -5,7 +5,6 @@
   "main": "gulpfile.js",
   "homepage1": "https://github.com/serednii/marcho",
   "homepage": "./",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d app"
@@ -13,11 +12,14 @@
   "author": "serednii mykola",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
     "@fancyapps/fancybox": "^3.5.7",
-    "gh-pages": "^6.1.1",
     "browser-sync": "^2.27.4",
     "del": "^6.0.0",
+    "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-imagemin": "^7.1.0",
     "ion-rangeslider": "^2.3.1",
     "mixitup": "^3.3.1",
@@ -25,6 +27,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "fullcalendar": "^3.10.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^5.0.0",
@@ -32,7 +35,6 @@
     "gulp-watch": "^5.0.1",
     "jquery": "^3.6.0",
     "jquery-form-styler": "^2.0.2",
-    "fullcalendar": "^3.10.2",
     "moment": "^2.29.1",
     "sass": "^1.36.0"
   }

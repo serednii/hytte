@@ -7,6 +7,7 @@ var watch = require('gulp-watch');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 const del = require('del');
+const babel = require('gulp-babel');
 
 const sync = require('browser-sync').create();
 
@@ -55,6 +56,9 @@ function scripts() {
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(uglify()) // мініиізує файл
     .pipe(dest('app/js'))
     .pipe(sync.stream())
