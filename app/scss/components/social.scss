@@ -1,0 +1,31 @@
+.social {
+  display: flex;
+  gap: 11px;
+  margin: 0 11px 0 0;
+}
+
+.social__item {
+  height: 20px;
+}
+
+.social__link {
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  border: 1px solid transparent;
+  border-radius: 30%;
+}
+
+.social__link:focus {
+  border-color: #fff;
+}
+
+.social__icon {
+
+  transition: scale 0.5s;
+}
+
+.social__icon:hover {
+  scale: 1.2;
+
+}

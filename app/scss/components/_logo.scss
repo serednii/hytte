@@ -1,0 +1,21 @@
+.logo__img {
+  width: 172px;
+  height: 109px;
+}
+
+/* Logo mini */
+.logo-mimi {
+  border: 1px solid transparent;
+  display: block;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.logo-mimi:focus {
+  border-color: #acc0ca;
+}
+
+.logo-mini__img {
+  width: 78px;
+  height: 38px;
+}

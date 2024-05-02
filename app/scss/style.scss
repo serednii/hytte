@@ -1,36 +1,17 @@
 @import 'reset';
+@import 'mixin';
 @import 'fonts';
 @import 'vars';
 @import 'libs';
-@import 'mixin';
 
-@import 'global';
+@import 'settings';
 
 @import 'burger';
-@import 'filters';
-@import 'modals';
-@import 'header';
-@import 'top';
-@import 'top-slider';
-@import 'header';
-@import 'menu';
-@import '_404';
-@import 'latest-post';
-@import 'blog-one';
-@import 'person';
-@import 'map';
-@import 'contact';
-@import 'pagination';
-@import 'header';
-@import 'footer';
-@import 'categories';
-@import 'video-fashion';
-@import 'product';
-@import 'promo';
-@import 'partners';
-@import 'blog-page';
-@import 'blog';
-@import 'login';
-@import 'shop';
-@import 'product-page';
-@import "captcha";
+// подключения компонентов страницы
+@import "./components/logo";
+@import "./components/header";
+@import "./components/options";
+@import "./components/book";
+@import "./components/social";
+@import "./components/menu";
+@import "./components/card";

@@ -36,24 +36,26 @@ function browser() {
 function scripts() {
   return src(
     [
-      'node_modules/jquery/dist/jquery.js',
-      'node_modules/slick-carousel/slick/slick.js', //Display multiple slick image slider and carousel using shortcode with category.
-      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js', //Также fancyBox позволяет группировать картинки, создавая галереи,
-      'node_modules/rateyo/src/jquery.rateyo.js', //рейтингами звезд
-      'node_modules/ion-rangeslider/js/ion.rangeSlider.js', //Плагин ion.rangeSlider  динамически менять шаг ползунка?
-      'node_modules/jquery-form-styler/dist/jquery.formstyler.js', //плагин для стилизации селектов, чекбоксов, радиокнопок, файловых и числовых полей
+      // 'node_modules/jquery/dist/jquery.min.js',
+      // 'node_modules/moment/dist/moment.js',
+      // 'node_modules/fullcalendar/dist/fullcalendar.min.js',
+      //'node_modules/slick-carousel/slick/slick.js', //Display multiple slick image slider and carousel using shortcode with category.
+      //'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js', //Также fancyBox позволяет группировать картинки, создавая галереи,
+      //'node_modules/rateyo/src/jquery.rateyo.js', //рейтингами звезд
+      //'node_modules/ion-rangeslider/js/ion.rangeSlider.js', //Плагин ion.rangeSlider  динамически менять шаг ползунка?
+      // 'node_modules/jquery-form-styler/dist/jquery.formstyler.js', //плагин для стилизации селектов, чекбоксов, радиокнопок, файловых и числовых полей
       'app/js/other-function.js',
-      'app/js/validate.js',
-      'app/js/functions.js',
-      'app/js/button-focus.js',
-      'app/js/clock.js',
-      'app/js/burger.js',
-      'app/js/send-mail.js',
-      'app/js/send-newsletter.js',
+      //'app/js/validate.js',
+      //'app/js/functions.js',
+      //'app/js/button-focus.js',
+      //'app/js/clock.js',
+      // 'app/js/burger.js',
+      //'app/js/send-mail.js',
+      //'app/js/send-newsletter.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
-    // .pipe(uglify()) // мініиізує файл
+    .pipe(uglify()) // мініиізує файл
     .pipe(dest('app/js'))
     .pipe(sync.stream())
 }

@@ -8,14 +8,18 @@ function burger() {
   const overlay = document?.querySelector('[data-menu-overlay]')
 
   document.body.addEventListener('click', e => {
-    if (!e.target.closest('.header__menu') && !e.target.closest('.burger')) {
-      menu.classList.contains('menu--active') && hiddenMenu()
+    console.log(e.target.closest('.header__menu'))
+    console.log(e.target.closest('.burger'))
+
+    if ((e.target.closest('.header__menu') && e.target.closest('.burger'))) {
+      // menu.classList.contains('menu--active') && hiddenMenu()
+      console.log('lkjklj')
     }
   })
 
   document.addEventListener('keydown', function (event) {
     if (event.code == 'Escape') {
-      menu.classList.contains('menu--active') && hiddenMenu()
+      // menu.classList.contains('menu--active') && hiddenMenu()
     }
   });
 
@@ -36,7 +40,7 @@ function burger() {
   })
 
   overlay?.addEventListener('click', () => {
-    hiddenMenu()
+    // hiddenMenu()
   })
 
   menuItems?.forEach(el => {
