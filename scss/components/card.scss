@@ -1,0 +1,139 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 190px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__img {
+  display: block;
+  width: 190px;
+  height: 390px;
+  margin-bottom: 7px;
+  transition: filter 0.2s ease-in;
+  border: 2px solid transparent;
+}
+
+.card__img:focus {
+  border-color: #34B7B7;
+}
+
+.card__img:hover {
+  filter: brightness(40%)
+}
+
+.card__img img {
+  width: 190px;
+  height: 390px;
+  object-fit: cover;
+}
+
+.card__content {
+  min-height: 110px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card__content-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.card__content-title {
+  font-size: 12px;
+  font-family: 'DM Sans', sans-serif;
+  max-width: 100px;
+  line-height: normal;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+
+.card__content-price {
+  background-color: transparent;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  border-radius: 4px;
+  color: #000;
+  border: 1px solid #34B7B7;
+  min-width: 68px;
+  height: min-content;
+  word-break: break-all;
+  padding: 7px 5px;
+}
+
+.card__content-price span {
+  color: #3B505A;
+}
+
+.card__content-location {
+  font-size: 10px;
+  color: #3B505A;
+  max-width: 100px;
+  margin-bottom: auto;
+}
+
+
+.card__content-tab {
+  position: relative;
+  border: none;
+  border-radius: 36px;
+  background-color: #34B7B7;
+  color: #fff;
+  height: 14px;
+  font-size: 8px;
+  padding: 2px 8px 2px 20px;
+}
+
+.card__content-tab_guests::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/guests.svg');
+  width: 8px;
+  height: 8px;
+  left: 8px;
+}
+
+.card__content-tab_bedrooms::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/bedroom.svg');
+  width: 8px;
+  height: 8px;
+  left: 8px;
+}
+
+
+@media (max-width: 450px) {
+  .card {
+    max-width: 250px;
+  }
+
+  .card__img {
+    width: 250px;
+  }
+
+  .card__img img {
+    width: 250px;
+  }
+
+  .card__content-title {
+    font-size: 15px;
+  }
+
+  .card__content-location {
+    font-size: 12px;
+    max-width: 129px;
+  }
+}

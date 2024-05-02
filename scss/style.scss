@@ -1,0 +1,17 @@
+@import 'reset';
+@import 'mixin';
+@import 'fonts';
+@import 'vars';
+@import 'libs';
+
+@import 'settings';
+
+@import 'burger';
+// подключения компонентов страницы
+@import "./components/logo";
+@import "./components/header";
+@import "./components/options";
+@import "./components/book";
+@import "./components/social";
+@import "./components/menu";
+@import "./components/card";
