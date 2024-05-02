@@ -75,7 +75,7 @@ $(document).ready(function () {
 
   body.on('click', function (e) {
     removeClass()
-    if (!$(e.target).closest('.fc-toolbar').length) {
+    if (!$(e.target).closest('.calendar').length) {
       removeClassCalendar()
     }
   })
