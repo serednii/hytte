@@ -149,6 +149,10 @@ i.fa+input {
   margin-bottom: 8px;
 }
 
+.fc-row.fc-week {
+  height: 39px !important;
+}
+
 .fc button {
   background-color: transparent;
   border: none;
@@ -458,6 +462,7 @@ select::after {
 
 }
 
+
 @media (max-width: 992px) {
   .calendar-check-out {
     left: 50%;
@@ -495,9 +500,17 @@ select::after {
     padding: 13px 20px;
   }
 
+  .calendar {
+    height: 298px;
+  }
+
   .calendar-check-out,
   .calendar-check-in {
-    top: -312px;
+    top: -222px;
+  }
+
+  .fc-row.fc-week {
+    height: 23px !important;
   }
 
 
